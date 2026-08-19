@@ -1,0 +1,61 @@
+{
+  "step": 2,
+  "status": "revised_ready_for_review",
+  "style_source": "reference_screenshots",
+  "visual_direction": {
+    "brand": "Affitor",
+    "font": "Inter",
+    "primary": "#233FD8",
+    "ink": "#0B2545",
+    "background": "#FFFFFF",
+    "surface": "#F5F8FC",
+    "border": "#DDE3EA",
+    "radius": "16-20px",
+    "shadow": "subtle"
+  },
+  "assets": {
+    "hero": "assets/luma-builder-event.png",
+    "hero_source": "official Luma event artwork supplied by user",
+    "trainer": "assets/son-techcrunch.jpeg",
+    "logo": "Affitor wordmark",
+    "favicon": "blue A on white"
+  },
+  "features": {
+    "countdown": false,
+    "chatbot": false,
+    "floating_contact": false,
+    "sticky_mobile_cta": true
+  },
+  "cta": {
+    "type": "external",
+    "url": "https://luma.com/6bc3oab0"
+  },
+  "review": {
+    "desktop": "passed",
+    "mobile": "passed",
+    "horizontal_overflow": false,
+    "broken_images": 0,
+    "luma_links": 5,
+    "faq_interaction": "passed",
+    "revision_2026_08_19": {
+      "title_scale": "hero large and centered; all later section titles moderate",
+      "hero_layout": "centered to match the supplied reference",
+      "official_luma_art": "added",
+      "approved_card_artwork": "exact approved image crops used for Demo Day and pricing; no CSS reconstruction",
+      "approved_card_fit": "image frames now hug the native image ratio with no nested border or stretched column",
+      "program_name": "Build to Own",
+      "pricing_tiers": "Builder $249, Team $899, Founder $8,990 shown directly on the pricing artwork",
+      "demo_border": "source white rim trimmed; one cobalt frame only",
+      "pricing_equal_height": "right benefit card compacted to match the artwork height on desktop",
+      "hero_title": "reduced and constrained to two desktop lines",
+      "demo_day": "upgraded to a unified live-event card",
+      "pricing": "upgraded with stronger hierarchy, benefit tiles and full-width CTA",
+      "approved_ai_art_direction": "implemented on Demo Day and pricing with warm ivory background, cobalt grid, lemon accent and cropped Luma artwork",
+      "ai_art_palette": "approved visual palette: pure white #FFFFFF, cobalt #233FD8 and lemon #F9F564",
+      "track_svg_height_bug": "fixed",
+      "track_cards": "redesigned",
+      "preparation_schedule": "redesigned",
+      "final_cta": "redesigned"
+    }
+  }
+}

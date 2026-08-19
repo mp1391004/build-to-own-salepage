@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build to Own là chương trình 4 tuần build trực tiếp cùng Sơn, giúp bạn biến một vấn đề thật thành sản phẩm có người trả tiền và trình diễn tại Demo Day.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <title>Build to Own — 4 tuần thành builder</title>
+  <link rel="canonical" href="https://build-to-own-affitor.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Affitor">
+  <meta property="og:title" content="Build to Own — 4 tuần thành builder">
+  <meta property="og:description" content="Build trực tiếp cùng Sơn, biến một vấn đề thật thành sản phẩm có người trả tiền và trình diễn tại Demo Day.">
+  <meta property="og:url" content="https://build-to-own-affitor.vercel.app/">
+  <meta property="og:image" content="https://build-to-own-affitor.vercel.app/assets/build-to-own-og.png">
+  <meta property="og:image:width" content="1680">
+  <meta property="og:image:height" content="944">
+  <meta property="og:image:alt" content="Build to Own — Demo Day và các gói tham gia chương trình">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Build to Own — 4 tuần thành builder">
+  <meta name="twitter:description" content="Build trực tiếp cùng Sơn, biến một vấn đề thật thành sản phẩm có người trả tiền.">
+  <meta name="twitter:image" content="https://build-to-own-affitor.vercel.app/assets/build-to-own-og.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='white'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-family='Arial,sans-serif' font-size='46' font-weight='800' fill='%23233FD8'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap&subset=vietnamese" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Build to Own",
+    "description": "Chương trình 4 tuần build trực tiếp cùng Sơn để biến một vấn đề thật thành sản phẩm có người trả tiền.",
+    "startDate": "2026-08-23T20:00:00+07:00",
+    "endDate": "2026-09-17T22:00:00+07:00",
+    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://luma.com/6bc3oab0"
+    },
+    "image": ["https://build-to-own-affitor.vercel.app/assets/build-to-own-og.png"],
+    "organizer": {
+      "@type": "Organization",
+      "name": "Affitor",
+      "url": "https://build-to-own-affitor.vercel.app/"
+    },
+    "offers": [
+      {"@type":"Offer","name":"Builder","price":"249","priceCurrency":"USD","url":"https://luma.com/6bc3oab0","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"Team — 4 builders","price":"899","priceCurrency":"USD","url":"https://luma.com/6bc3oab0","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"Founder","price":"8990","priceCurrency":"USD","url":"https://luma.com/6bc3oab0","availability":"https://schema.org/InStock"}
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --primary:#233fd8;
+      --primary-hover:#1b31b4;
+      --primary-soft:#eaeeFA;
+      --bg:#fff;
+      --bg-soft:#f6f8fb;
+      --ivory:#ffffff;
+      --ivory-deep:#ffffff;
+      --lemon:#f9f564;
+      --surface:#fff;
+      --text:#0b2545;
+      --muted:#465d73;
+      --subtle:#7d90a5;
+      --border:#dfe4ea;
+      --success:#19b968;
+      --danger:#ef4444;
+      --font:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      --r-sm:10px;
+      --r-md:16px;
+      --r-lg:20px;
+      --r-pill:999px;
+      --shadow-sm:0 8px 24px rgba(11,37,69,.06);
+      --shadow-md:0 18px 48px rgba(11,37,69,.09);
+      --section-y:96px;
+      --wrap:1240px;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      overflow-x:hidden;
+      background:var(--bg);
+      color:var(--text);
+      font-family:var(--font);
+      font-size:16px;
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+    }
+    img { display:block; max-width:100%; }
+    a { color:inherit; text-decoration:none; }
+    button { font:inherit; }
+    .wrap { width:min(var(--wrap), calc(100% - 48px)); margin:0 auto; }
+    .narrow { width:min(880px, calc(100% - 48px)); margin:0 auto; }
+    .section { padding-top:var(--section-y); padding-bottom:var(--section-y); }
+    .section-soft { background:var(--bg-soft); }
+    .section-head { max-width:800px; margin:0 auto 52px; text-align:center; }
+    .section-head.left { max-width:720px; margin-left:0; text-align:left; }
+    .eyebrow {
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      color:var(--primary);
+      background:var(--primary-soft);
+      border-radius:var(--r-pill);
+      padding:8px 15px;
+      font-size:14px;
+      font-weight:700;
+      letter-spacing:-.01em;
+    }
+    .eyebrow-dot { width:8px; height:8px; border-radius:50%; background:#7da3ff; }
+    h1,h2,h3 { margin:0; color:var(--text); font-weight:800; letter-spacing:-.028em; }
+    h1 { padding-top:.15em; font-size:clamp(50px,5.4vw,68px); line-height:1.08; }
+    h2 { padding-top:.15em; font-size:clamp(28px,2.6vw,38px); line-height:1.2; }
+    h3 { font-size:21px; line-height:1.3; letter-spacing:-.025em; }
+    .blue { color:var(--primary); }
+    .lead { margin:18px 0 0; color:var(--muted); font-size:clamp(17px,1.6vw,20px); line-height:1.65; }
+    .muted { color:var(--muted); }
+    .subtle { color:var(--subtle); }
+    .btn {
+      min-height:52px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      border:2px solid transparent;
+      border-radius:14px;
+      padding:13px 24px;
+      font-weight:700;
+      line-height:1.2;
+      cursor:pointer;
+      transition:transform .18s ease, background-color .18s ease, border-color .18s ease;
+    }
+    .btn:hover { transform:translateY(-2px); }
+    .btn:active { transform:translateY(0) scale(.98); }
+    .btn-primary { background:var(--primary); color:#fff; }
+    .btn-primary:hover { background:var(--primary-hover); }
+    .btn-outline { background:#fff; color:var(--text); border-color:var(--text); }
+    .btn-outline:hover { border-color:var(--primary); color:var(--primary); }
+    .btn-icon svg { width:18px; height:18px; }
+    .icon {
+      width:48px;
+      height:48px;
+      flex:0 0 48px;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      color:var(--primary);
+      background:var(--primary-soft);
+      border-radius:13px;
+    }
+    .icon svg { width:24px; height:24px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+    .card {
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:var(--r-lg);
+      box-shadow:var(--shadow-sm);
+      transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .card:hover { transform:translateY(-4px); border-color:#c8d7ef; box-shadow:var(--shadow-md); }
+    .grid-3 { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .grid-2 { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; }
+    [data-reveal] { opacity:0; transform:translateY(24px); transition:opacity .65s ease, transform .65s ease; }
+    [data-reveal].is-visible { opacity:1; transform:none; }
+    @media (prefers-reduced-motion:reduce) {
+      * { scroll-behavior:auto!important; transition:none!important; animation:none!important; }
+      [data-reveal] { opacity:1; transform:none; }
+    }
+
+    /* Header */
+    .site-header {
+      position:sticky;
+      top:0;
+      z-index:30;
+      background:rgba(255,255,255,.94);
+      border-bottom:1px solid rgba(223,228,234,.9);
+      backdrop-filter:blur(14px);
+    }
+    .nav { min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { color:var(--primary); font-size:29px; font-weight:800; letter-spacing:-.06em; }
+    .nav-links { display:flex; align-items:center; gap:28px; color:var(--muted); font-size:14px; font-weight:600; }
+    .nav-links a:hover { color:var(--primary); }
+    .nav .btn { min-height:44px; padding:10px 18px; border-radius:11px; }
+
+    /* Hero */
+    .hero { padding-top:76px; padding-bottom:58px; }
+    .hero-center { text-align:center; }
+    .hero-copy { max-width:1240px; margin:0 auto; }
+    .hero h1 { margin-top:26px; letter-spacing:-.045em; }
+    .hero h1 .hero-line { display:block; white-space:nowrap; }
+    .hero .lead { max-width:850px; margin-left:auto; margin-right:auto; }
+    .hero-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-top:32px; }
+    .hero-note { display:flex; align-items:center; justify-content:center; gap:10px; margin-top:16px; color:var(--muted); font-size:14px; }
+    .hero-note svg { width:18px; height:18px; color:var(--primary); }
+    .hero-event {
+      max-width:940px;
+      margin:54px auto 0;
+      display:grid;
+      grid-template-columns:300px 1fr;
+      gap:0;
+      overflow:hidden;
+      text-align:left;
+      background:var(--bg-soft);
+    }
+    .hero-event img { width:100%; height:100%; min-height:300px; object-fit:cover; }
+    .hero-event-copy { display:flex; flex-direction:column; justify-content:center; padding:34px 38px; }
+    .hero-event-copy .eyebrow { align-self:flex-start; }
+    .hero-event-copy h3 { margin-top:18px; font-size:28px; }
+    .event-meta { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:24px; }
+    .event-meta div { padding:14px; border:1px solid var(--border); border-radius:12px; background:#fff; }
+    .event-meta span { display:block; color:var(--subtle); font-size:12px; font-weight:600; }
+    .event-meta strong { display:block; margin-top:3px; color:var(--text); font-size:14px; line-height:1.4; }
+
+    /* Signals */
+    .signal-strip { padding:38px 0 64px; }
+    .signals { display:grid; grid-template-columns:repeat(3,1fr); }
+    .signal { display:flex; align-items:center; gap:17px; padding:6px 36px; border-right:1px solid var(--border); }
+    .signal:first-child { padding-left:0; }
+    .signal:last-child { border-right:0; padding-right:0; }
+    .signal strong { display:block; font-size:19px; }
+    .signal span { color:var(--muted); font-size:14px; }
+
+    /* Pain */
+    .problem-card { padding:28px; }
+    .problem-card p { margin:12px 0 0; color:var(--muted); }
+    .problem-card .icon { margin-bottom:22px; }
+    .twist {
+      margin-top:28px;
+      padding:22px 24px;
+      border-left:4px solid var(--primary);
+      border-radius:0 var(--r-md) var(--r-md) 0;
+      background:var(--primary-soft);
+      color:var(--text);
+      font-size:18px;
+      font-weight:700;
+    }
+
+    /* Story */
+    .story-photo { position:relative; }
+    .story-photo img { width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center 38%; border-radius:var(--r-lg); border:1px solid var(--border); box-shadow:var(--shadow-md); }
+    .story-caption { position:absolute; left:20px; right:20px; bottom:20px; padding:14px 16px; border:1px solid rgba(255,255,255,.75); border-radius:13px; background:rgba(255,255,255,.94); color:var(--text); font-weight:700; box-shadow:var(--shadow-sm); }
+    .story-copy p { margin:18px 0 0; color:var(--muted); font-size:18px; }
+
+    /* Outcomes */
+    .outcome { display:flex; gap:18px; padding:25px; }
+    .outcome p { margin:8px 0 0; color:var(--muted); }
+
+    /* Tracks */
+    .tracks-grid { align-items:stretch; }
+    .track { position:relative; overflow:hidden; padding:32px; min-height:100%; }
+    .tracks-grid .track::before { content:""; position:absolute; inset:0 auto 0 0; width:5px; background:var(--primary); }
+    .tracks-grid .track:nth-child(2)::before { background:#79a0ff; }
+    .track-label { color:var(--primary); font-size:14px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; }
+    .track h3 { margin-top:12px; font-size:27px; }
+    .track p { margin:14px 0 0; color:var(--muted); }
+    .track-list { margin:22px 0 0; padding:0; list-style:none; border-top:1px solid var(--border); }
+    .track-list li { display:flex; align-items:flex-start; gap:11px; padding:14px 0; border-bottom:1px solid var(--border); color:var(--text); font-weight:600; }
+    .track-list li:last-child { border-bottom:0; padding-bottom:0; }
+    .track-list svg { display:block; width:19px; height:19px; flex:0 0 19px; color:var(--primary); margin-top:3px; }
+
+    /* Curriculum */
+    .timeline { display:grid; gap:18px; }
+    .week { display:grid; grid-template-columns:116px 1fr; gap:24px; padding:30px; align-items:start; }
+    .week-no { color:var(--primary); background:var(--primary-soft); border-radius:13px; padding:12px; text-align:center; font-size:14px; font-weight:800; }
+    .week p { margin:9px 0 0; color:var(--muted); }
+
+    /* Demo Day */
+    .demo-shell { position:relative; overflow:visible; display:grid; grid-template-columns:.72fr 1.28fr; gap:24px; align-items:start; border:0; border-radius:0; background:transparent; box-shadow:none; }
+    .demo-date { overflow:hidden; display:flex; align-items:center; justify-content:center; align-self:start; background:#fff; border:1px solid #8fb0ff; border-radius:28px; box-shadow:0 24px 60px rgba(33,97,255,.1); }
+    .demo-date::before,.demo-date::after { display:none; }
+    .approved-card-img { display:block; width:100%; height:auto; max-width:100%; object-fit:contain; }
+    .approved-card-link { position:relative; display:block; width:100%; overflow:hidden; }
+    .demo-date .approved-card-img,.price-panel .approved-card-img { width:calc(100% + 4px); max-width:none; margin:-2px; }
+    .demo-date-top { position:relative; z-index:1; padding:22px 28px; border-bottom:1px solid rgba(33,97,255,.24); color:var(--primary); font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; }
+    .demo-date-main { position:relative; z-index:1; display:flex; align-items:center; justify-content:center; gap:18px; padding:46px 24px; }
+    .demo-day-num { color:var(--primary); font-size:104px; font-weight:800; line-height:.9; letter-spacing:-.08em; text-shadow:0 10px 30px rgba(33,97,255,.12); }
+    .demo-month { display:grid; gap:3px; color:var(--text); font-size:18px; font-weight:800; line-height:1.2; }
+    .demo-month small { color:var(--primary); font-size:13px; font-weight:700; opacity:1; }
+    .demo-date-bottom { position:relative; z-index:2; padding:18px 28px; border-top:1px solid #b7caff; background:rgba(238,244,255,.92); color:var(--text); font-size:14px; font-weight:700; }
+    .demo-copy { position:relative; padding:46px 48px; background:var(--ivory); border:1px solid #8fb0ff; border-radius:28px; box-shadow:0 24px 60px rgba(33,97,255,.1); }
+    .demo-copy::before { content:"LIVE SHOWCASE"; display:inline-flex; margin-bottom:16px; color:var(--primary); font-size:12px; font-weight:800; letter-spacing:.13em; }
+    .demo-copy h2 { max-width:660px; }
+    .demo-copy p { margin:14px 0 0; color:var(--muted); font-size:17px; }
+    .demo-rules { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:26px; }
+    .demo-rules span { display:flex; align-items:center; gap:9px; border:1px solid #c9d6ff; background:rgba(255,255,255,.76); border-radius:12px; padding:10px 12px; font-size:13px; font-weight:700; }
+    .demo-rules svg { width:17px; height:17px; flex:0 0 17px; color:var(--primary); fill:none; stroke:currentColor; stroke-width:2.4; }
+
+    /* Community + included */
+    .community-card { padding:42px; }
+    .community-points { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+    .community-point { padding:20px; border-radius:var(--r-md); background:var(--bg-soft); }
+    .community-point strong { display:block; margin-top:12px; }
+    .community-point p { margin:6px 0 0; color:var(--muted); font-size:14px; }
+    .included-list { display:grid; grid-template-columns:1fr 1fr; gap:0 36px; padding:38px; }
+    .included-item { display:flex; gap:14px; padding:19px 0; border-bottom:1px solid var(--border); }
+    .included-item:nth-last-child(-n+2) { border-bottom:0; }
+    .check { width:24px; height:24px; flex:0 0 24px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:var(--primary-soft); color:var(--primary); font-weight:800; }
+    .included-item p { margin:3px 0 0; color:var(--muted); font-size:14px; }
+
+    /* Audience */
+    .audience-card { padding:32px; }
+    .audience-card h3 { font-size:25px; }
+    .audience-list { list-style:none; margin:24px 0 0; padding:0; }
+    .audience-list li { position:relative; padding:13px 0 13px 31px; border-bottom:1px solid var(--border); color:var(--muted); }
+    .audience-list li:last-child { border-bottom:0; }
+    .audience-list li::before { content:""; position:absolute; left:2px; top:21px; width:10px; height:10px; border:2px solid var(--primary); border-radius:50%; }
+    .audience-card.no .audience-list li::before { border-color:var(--danger); }
+
+    /* Preparation + schedule */
+    .info-shell { display:grid; grid-template-columns:1.08fr .92fr; gap:24px; align-items:stretch; }
+    .prep-panel { padding:38px; }
+    .prep-panel h2 { max-width:620px; }
+    .prep-steps { display:grid; gap:0; margin-top:24px; counter-reset:prep; }
+    .prep-step { counter-increment:prep; display:flex; gap:16px; padding:16px 0; border-bottom:1px solid var(--border); }
+    .prep-step::before { content:counter(prep); width:34px; height:34px; flex:0 0 34px; display:flex; align-items:center; justify-content:center; border-radius:50%; background:var(--primary); color:#fff; font-weight:800; }
+    .cost-note { margin-top:22px; padding:17px 18px; background:var(--primary-soft); border:1px solid #d5e2ff; border-radius:var(--r-md); color:var(--muted); }
+    .schedule-card { overflow:hidden; padding:0; }
+    .schedule-head { padding:26px 28px; color:#fff; background:var(--text); }
+    .schedule-head h3 { color:#fff; }
+    .schedule-head p { margin:5px 0 0; color:rgba(255,255,255,.68); font-size:14px; }
+    .schedule-body { padding:8px 28px 18px; }
+    .schedule-row { display:flex; justify-content:space-between; align-items:center; gap:24px; padding:15px 0; border-bottom:1px solid var(--border); }
+    .schedule-row:last-child { border-bottom:0; }
+    .schedule-row span { color:var(--muted); }
+    .schedule-row strong { text-align:right; }
+
+    /* Pricing */
+    .pricing-card { overflow:visible; max-width:1100px; margin:0 auto; border:0; border-radius:0; background:transparent; box-shadow:none; }
+    .pricing-layout { display:grid; grid-template-columns:.9fr 1.1fr; gap:24px; align-items:stretch; }
+    .price-panel { overflow:hidden; display:flex; align-items:center; justify-content:center; align-self:stretch; padding:0; color:var(--text); background:#fff; border:1px solid #8fb0ff; border-radius:28px; box-shadow:0 24px 60px rgba(33,97,255,.1); }
+    .price-panel::before,.price-panel::after { display:none; }
+    .price-panel .eyebrow { width:max-content; color:var(--text); background:var(--lemon); border:1px solid rgba(33,97,255,.18); }
+    .price-program { margin-top:28px; color:var(--primary); font-size:13px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+    .price { display:block; margin:8px 0 14px; }
+    .price strong { display:block; color:var(--primary); font-size:clamp(72px,8vw,100px); line-height:.94; letter-spacing:-.08em; }
+    .price span { display:block; margin-top:9px; color:var(--text); font-size:17px; font-weight:700; }
+    .pricing-sub { max-width:320px; margin:0; color:var(--muted); font-size:16px; }
+    .price-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:26px; }
+    .price-summary span { padding:10px 8px; border:1px solid rgba(33,97,255,.22); border-radius:10px; background:rgba(255,255,255,.72); color:var(--text); text-align:center; font-size:12px; font-weight:700; }
+    .pricing-tier-overlay { position:absolute; z-index:3; top:4.3%; left:4.2%; right:4.2%; display:grid; grid-template-columns:repeat(3,1fr); gap:5px; padding:4px; background:#fff; color:var(--text); font-size:clamp(8px,.9vw,11px); font-weight:800; line-height:1.2; white-space:nowrap; }
+    .pricing-tier-overlay span { padding:7px 4px; border:1px solid #9ab5ff; border-radius:999px; background:#fff; text-align:center; box-shadow:0 5px 14px rgba(35,63,216,.1); }
+    .pricing-tier-overlay span:first-child { background:var(--lemon); border-color:#d8d22b; color:var(--text); }
+    .pricing-tier-overlay span:nth-child(2) { background:#eaf0ff; border-color:#7f9fff; color:var(--primary); }
+    .pricing-tier-overlay span:nth-child(3) { background:var(--text); border-color:var(--text); color:#fff; }
+    .pricing-program-overlay { position:absolute; z-index:3; top:18.2%; left:4.5%; right:41%; padding:5px 12px; background:#fff; color:var(--primary); font-size:clamp(10px,1.1vw,14px); font-weight:800; line-height:1.2; letter-spacing:.12em; text-transform:uppercase; white-space:nowrap; }
+    .pricing-content { padding:28px 32px; background:var(--ivory); border:1px solid #8fb0ff; border-radius:28px; box-shadow:0 24px 60px rgba(33,97,255,.1); }
+    .pricing-content h3 { font-size:24px; }
+    .pricing-divider { height:1px; background:var(--border); margin:16px 0; }
+    .price-features { display:grid; grid-template-columns:1fr 1fr; gap:8px; text-align:left; }
+    .price-feature { min-height:56px; display:flex; gap:10px; align-items:flex-start; padding:10px 12px; border:1px solid #c9d6ff; border-radius:12px; background:rgba(255,255,255,.76); color:var(--muted); font-size:14px; line-height:1.45; }
+    .price-feature .check { margin-top:2px; }
+    .price-cta { margin-top:16px; }
+    .price-cta .btn { width:100%; }
+    .price-note { margin-top:10px; padding:10px 12px; border-radius:11px; background:var(--primary-soft); color:var(--muted); font-size:12px; line-height:1.45; }
+    .tier-summary { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; padding:0; background:transparent; }
+    .tier-summary span { display:flex; align-items:center; justify-content:center; gap:4px; min-height:38px; padding:7px 5px; border:1px solid #b6c8ff; border-radius:10px; background:#fff; color:var(--text); text-align:center; white-space:nowrap; }
+    .tier-summary span:first-child { background:var(--lemon); border-color:#d8d22b; }
+    .tier-summary span:nth-child(2) { background:#eaf0ff; border-color:#7f9fff; color:var(--primary); }
+    .tier-summary span:nth-child(3) { background:var(--text); border-color:var(--text); color:#fff; }
+    .tier-summary strong { font-weight:800; }
+
+    /* FAQ */
+    .faq { display:grid; gap:14px; }
+    details { border:1px solid var(--border); border-radius:var(--r-md); background:#fff; overflow:hidden; }
+    summary { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:18px; padding:20px 24px; cursor:pointer; list-style:none; font-size:18px; font-weight:700; }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:"+"; width:34px; height:34px; flex:0 0 34px; display:flex; align-items:center; justify-content:center; border:1px solid var(--border); border-radius:50%; color:var(--muted); font-size:22px; font-weight:400; }
+    details[open] summary::after { content:"−"; color:#fff; background:var(--primary); border-color:var(--primary); }
+    details p { margin:0; padding:0 24px 24px; color:var(--muted); font-size:17px; }
+
+    /* Final CTA + footer */
+    .final-card { position:relative; overflow:hidden; display:grid; grid-template-columns:1.35fr .65fr; gap:36px; align-items:center; padding:50px 54px; background:var(--primary); border-radius:var(--r-lg); color:#fff; }
+    .final-card::after { content:""; position:absolute; width:300px; height:300px; right:-120px; top:-150px; border:52px solid rgba(255,255,255,.09); border-radius:50%; }
+    .final-card h2 { color:#fff; }
+    .final-card p { max-width:720px; margin:17px 0 0; color:rgba(255,255,255,.84); font-size:17px; }
+    .final-action { position:relative; z-index:1; display:grid; gap:12px; justify-items:stretch; }
+    .final-date { padding:15px 17px; border:1px solid rgba(255,255,255,.25); border-radius:13px; background:rgba(255,255,255,.1); text-align:center; font-size:14px; font-weight:700; }
+    .final-card .btn { color:var(--primary); background:#fff; }
+    .final-card .btn:hover { background:#f4f7ff; }
+    .final-note { margin-top:13px; font-size:13px; opacity:.82; }
+    footer { padding:46px 0 104px; border-top:1px solid var(--border); }
+    .footer-grid { display:flex; justify-content:space-between; gap:36px; align-items:flex-start; }
+    .footer-brand { color:var(--primary); font-size:27px; font-weight:800; letter-spacing:-.06em; }
+    .footer-copy { max-width:560px; color:var(--muted); font-size:14px; }
+    .footer-meta { color:var(--subtle); font-size:13px; text-align:right; }
+    .sticky-mobile { display:none; }
+
+    @media (max-width:980px) {
+      :root { --section-y:88px; }
+      .nav-links { display:none; }
+      .split,.demo-shell,.info-shell,.pricing-layout,.final-card { grid-template-columns:1fr; }
+      .grid-3 { grid-template-columns:1fr 1fr; }
+      .signals { grid-template-columns:1fr; gap:20px; }
+      .signal,.signal:first-child,.signal:last-child { border-right:0; padding:5px 0; }
+      .community-points { grid-template-columns:1fr; }
+    }
+    @media (max-width:680px) {
+      :root { --section-y:72px; }
+      body { padding-bottom:74px; }
+      .wrap,.narrow { width:min(100% - 32px, var(--wrap)); }
+      .site-header .btn { display:none; }
+      .nav { min-height:64px; }
+      .brand { font-size:25px; }
+      .hero { padding-top:56px; padding-bottom:48px; }
+      h1 { font-size:42px; line-height:1.08; }
+      h2 { font-size:28px; line-height:1.22; }
+      .hero-actions { display:grid; }
+      .hero-note { align-items:flex-start; }
+      .hero-event { grid-template-columns:1fr; margin-top:38px; }
+      .hero-event img { aspect-ratio:1/1; min-height:0; }
+      .hero-event-copy { padding:26px 22px; }
+      .hero-event-copy h3 { font-size:25px; }
+      .event-meta { grid-template-columns:1fr; }
+      .hero h1 .hero-line { white-space:normal; }
+      .demo-rules,.price-summary { grid-template-columns:1fr; }
+      .btn { width:100%; }
+      .grid-3,.grid-2,.included-list,.price-features { grid-template-columns:1fr; }
+      .week { grid-template-columns:1fr; gap:14px; padding:24px; }
+      .week-no { width:max-content; }
+      .demo-day-num { font-size:82px; }
+      .community-card,.included-list,.audience-card,.schedule-card { padding:24px; }
+      .included-item:nth-last-child(2) { border-bottom:1px solid var(--border); }
+      .schedule-row { display:grid; gap:5px; }
+      .schedule-row strong { text-align:left; }
+      .prep-panel { padding:28px 24px; }
+      .pricing-content { padding:30px 24px; }
+      .price strong { font-size:78px; }
+      .final-card { padding:36px 24px; }
+      .final-action { justify-items:stretch; }
+      .footer-grid { display:grid; }
+      .footer-meta { text-align:left; }
+      .sticky-mobile { position:fixed; left:0; right:0; bottom:0; z-index:50; display:block; padding:10px 14px; background:rgba(255,255,255,.96); border-top:1px solid var(--border); backdrop-filter:blur(12px); }
+      .sticky-mobile .btn { min-height:52px; }
+    }
+  </style>
+</head>
+<body>
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 9-3 3 3 3M16 9l3 3-3 3M14 5l-4 14"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-cube" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4.5 7.8 7.5 4.3 7.5-4.3M12 12v9"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.1-.1l-2 2a5 5 0 0 0 7 7.1l1.1-1.1"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09ZM12 15l-3-3a22 22 0 0 1 2-3.95A12.87 12.87 0 0 1 22 2c0 2.72-.78 7.5-6.05 11a22.35 22.35 0 0 1-3.95 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1v7Z"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Affitor — về đầu trang">Affitor</a>
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a href="#mang-ve">Bạn mang về gì</a>
+        <a href="#lo-trinh">Lộ trình</a>
+        <a href="#phu-hop">Ai phù hợp</a>
+        <a href="#thong-tin">Thông tin</a>
+      </nav>
+      <a class="btn btn-primary" href="https://luma.com/6bc3oab0" target="_blank" rel="noopener">Đăng ký trên Luma</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-center">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Build to Own · Build trực tiếp qua Zoom</span>
+          <h1><span class="hero-line">4 tuần để biến một vấn đề thật</span><span class="hero-line blue">thành sản phẩm có người trả tiền</span></h1>
+          <p class="lead">Bạn không ngồi xem Sơn giảng. Sơn build công khai, bạn build song song, mỗi tuần ship một thứ chạy được. Hết sprint, mục tiêu là một sản phẩm mang tên bạn đang sống trên internet.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-icon" href="https://luma.com/6bc3oab0" target="_blank" rel="noopener">Đăng ký trên Luma — $249 <svg><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-outline" href="#lo-trinh">Xem lộ trình 4 tuần</a>
+          </div>
+          <div class="hero-note"><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-clock"/></svg> Bắt đầu Chủ nhật, 23/08/2026 · Đăng ký cần được Sơn duyệt</div>
+        </div>
+        <div class="card hero-event" data-reveal>
+          <img src="assets/luma-builder-event.png" width="800" height="800" alt="Ảnh sự kiện Build to Own chính thức trên Luma">
+          <div class="hero-event-copy">
+            <span class="eyebrow">Sự kiện chính thức trên Luma</span>
+            <h3>Build to Own</h3>
+            <p class="muted">Một sprint thực hành dành cho người muốn tự đưa vấn đề thật thành sản phẩm có thể vận hành và bán được.</p>
+            <div class="event-meta">
+              <div><span>Bắt đầu</span><strong>Chủ nhật<br>23/08/2026</strong></div>
+              <div><span>Hình thức</span><strong>Online<br>qua Zoom</strong></div>
+              <div><span>Chương trình</span><strong>4 tuần<br>8 buổi + Demo Day</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="signal-strip">
+      <div class="wrap signals">
+        <div class="signal"><span class="icon"><svg><use href="#i-clock"/></svg></span><div><strong>4 tuần</strong><span>Một nhịp build có deadline thật</span></div></div>
+        <div class="signal"><span class="icon"><svg><use href="#i-code"/></svg></span><div><strong>8 buổi + Demo Day</strong><span>Build song song, không ngồi xem</span></div></div>
+        <div class="signal"><span class="icon"><svg><use href="#i-rocket"/></svg></span><div><strong>1 sản phẩm thật</strong><span>Có domain, trang giá và nhận tiền</span></div></div>
+      </div>
+    </div>
+
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="section-head left" data-reveal>
+          <span class="eyebrow">Vấn đề thật</span>
+          <h2>Khoảng trống giữa business và kỹ thuật có thể đắt hơn cả tiền thuê dev</h2>
+          <p class="lead">Bạn có business muốn làm, dev có kỹ năng để làm, nhưng ở giữa là một khoảng trống không ai bắc cầu được.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card problem-card" data-reveal><span class="icon"><svg><use href="#i-link"/></svg></span><h3>Không mô tả được thứ mình muốn</h3><p>Thứ được làm ra có thể đúng yêu cầu trên giấy nhưng vẫn sai điều business thật sự cần.</p></article>
+          <article class="card problem-card" data-reveal><span class="icon"><svg><use href="#i-shield"/></svg></span><h3>Duyệt quyết định trong mù mờ</h3><p>Bạn không biết báo giá hai trăm triệu là hợp lý, hay một việc thật sự chỉ cần hai ngày.</p></article>
+          <article class="card problem-card" data-reveal><span class="icon"><svg><use href="#i-cube"/></svg></span><h3>Thuê mãi nhưng không sở hữu</h3><p>Subscription là chi phí trả mãi mãi. Tài sản bạn tự build có thể tiếp tục tạo ra thặng dư.</p></article>
+        </div>
+        <div class="twist" data-reveal>Cái giá lớn nhất không phải một lần chọn sai công cụ. Đó là việc bạn tiếp tục phụ thuộc vào người khác để biến mọi ý tưởng thành sản phẩm.</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="story-photo" data-reveal>
+          <img src="assets/son-techcrunch.jpeg" width="2048" height="1536" loading="lazy" alt="Sơn tại sự kiện công nghệ TechCrunch Disrupt">
+          <div class="story-caption">Sơn tại TechCrunch Disrupt</div>
+        </div>
+        <div class="story-copy" data-reveal>
+          <span class="eyebrow">Vì sao có sprint này</span>
+          <h2>Sơn đã trả học phí bằng tiền thật và những quyết định không thể đánh giá</h2>
+          <p>Sơn từng thuê một team dev và chi bốn đến năm tỷ tiền lương trong hai năm. Vấn đề không nằm ở team. Vấn đề là Sơn không đủ nền để mô tả đúng thứ cần làm, đọc quyết định kỹ thuật hay đánh giá một báo giá.</p>
+          <p>Có một thời gian Sơn còn trả hơn $5,000 mỗi tháng cho hơn hai mươi công cụ AI. Khi tự build lại một phần, Sơn nhận ra nhiều thứ đang thuê hoàn toàn có thể trở thành tài sản do chính mình sở hữu.</p>
+          <p><strong class="blue">Build to Own được mở cho những người đang đứng đúng chỗ Sơn từng đứng.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="mang-ve">
+      <div class="wrap">
+        <div class="section-head" data-reveal><span class="eyebrow">Kết quả</span><h2>Cái bạn thật sự mang về</h2><p class="lead">Không phải một tập video để xem hết. Là năng lực tự đưa một sản phẩm từ ý tưởng tới lúc có người dùng.</p></div>
+        <div class="grid-3">
+          <article class="card outcome" data-reveal><span class="icon"><svg><use href="#i-link"/></svg></span><div><h3>Nói cùng ngôn ngữ với dev</h3><p>Hiểu architecture, biết một bản đặc tả cần đủ đến đâu và nhận ra khi nào “cái này khó” là thật.</p></div></article>
+          <article class="card outcome" data-reveal><span class="icon"><svg><use href="#i-clock"/></svg></span><div><h3>Định giá thời gian và tiền</h3><p>Không còn duyệt báo giá trong mù mờ, cũng không ép một việc thật sự khó vào thời hạn phi thực tế.</p></div></article>
+          <article class="card outcome" data-reveal><span class="icon"><svg><use href="#i-code"/></svg></span><div><h3>Tự làm bản đầu tiên</h3><p>Thuê dev sau khi đã biết rõ mình muốn gì, không thuê dev để đi tìm hộ mình câu trả lời.</p></div></article>
+          <article class="card outcome" data-reveal><span class="icon"><svg><use href="#i-cube"/></svg></span><div><h3>Tự học tiếp được</h3><p>Đọc được một repo lạ, hỏi được câu hỏi đúng và nhận ra chính xác phần mình chưa biết.</p></div></article>
+          <article class="card outcome" data-reveal><span class="icon"><svg><use href="#i-shield"/></svg></span><div><h3>Giảm chi phí công cụ</h3><p>Tự sở hữu những tool nội bộ nhỏ thay vì tiếp tục thuê mọi thứ dưới dạng subscription.</p></div></article>
+          <article class="card outcome" data-reveal><span class="icon"><svg><use href="#i-rocket"/></svg></span><div><h3>Một sản phẩm đang sống</h3><p>Có domain, trang giá, thanh toán, affiliate và người dùng thật — không chỉ là demo trong máy.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hai-duong">
+      <div class="wrap">
+        <div class="section-head" data-reveal><span class="eyebrow">Hai đường song song</span><h2>Mỗi tuần vừa giải việc của bạn, vừa đưa một sản phẩm tiến gần thị trường</h2></div>
+        <div class="grid-2 tracks-grid">
+          <article class="card track" data-reveal><div class="track-label">Đường 01</div><h3>Tool nội bộ dùng được ngay hôm sau</h3><p>Mỗi tool giải đúng một việc đang làm bạn tốn thời gian hoặc tiền. Nhỏ, hoàn thành trong một buổi và đưa vào công việc thật.</p><ul class="track-list"><li><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Ít nhất bốn tool đang chạy sau sprint</li><li><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Cắt một phần chi phí subscription</li><li><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Lấy vấn đề từ chính ngày làm việc của bạn</li></ul></article>
+          <article class="card track" data-reveal><div class="track-label">Đường 02</div><h3>Một sản phẩm đi xuyên suốt bốn tuần</h3><p>Từ vấn đề, validate, lõi, deploy, thanh toán quốc tế, bảng giá, affiliate tới launch.</p><ul class="track-list"><li><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Có domain và trang giá</li><li><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Checkout và webhook chạy thật</li><li><svg fill="none" stroke="currentColor" stroke-width="2"><use href="#i-check"/></svg>Có người dùng và đường phân phối</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="lo-trinh">
+      <div class="narrow">
+        <div class="section-head" data-reveal><span class="eyebrow">Lộ trình</span><h2>Bốn tuần, mỗi tuần phải ship</h2><p class="lead">Thứ tự cố định: tìm đúng vấn đề, làm lõi, đưa ra đời, rồi vận hành và phân phối.</p></div>
+        <div class="timeline">
+          <article class="card week" data-reveal><div class="week-no">TUẦN 1</div><div><h3>Nền móng</h3><p>Lọc bài toán từ chính ngày làm việc của bạn, dựng môi trường làm việc chuẩn và hiểu một tính năng thực sự tiêu tốn bao nhiêu.</p></div></article>
+          <article class="card week" data-reveal><div class="week-no">TUẦN 2</div><div><h3>Lõi</h3><p>Research thị trường SaaS, phân rã đối thủ, validate rẻ và build tới khi có MVP chạy được. Luôn làm lõi trước, rồi mới làm vỏ.</p></div></article>
+          <article class="card week" data-reveal><div class="week-no">TUẦN 3</div><div><h3>Ra đời</h3><p>Đưa sản phẩm cho người thật dùng và mở đường tiền vào: deploy, checkout thật, webhook, bảng giá, affiliate và cách đưa tiền về Việt Nam.</p></div></article>
+          <article class="card week" data-reveal><div class="week-no">TUẦN 4</div><div><h3>Vận hành và phân phối</h3><p>Xây team agent có vai trò và ranh giới rõ, rồi launch và bán hàng. Bạn không đợi build xong mới nghĩ tới phân phối.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="demo-day">
+      <div class="wrap demo-shell">
+        <div class="demo-date" data-reveal><img class="approved-card-img" src="assets/demo-day-approved.png" width="727" height="778" alt="Demo Day ngày 17 tháng 09 năm 2026 — 5 phút mỗi sản phẩm, show trực tiếp"></div>
+        <article class="demo-copy" data-reveal><h2>Sản phẩm thật, số thật, nút thắt thật</h2><p>Mỗi người có năm phút để nói mình là ai, đang giải vấn đề gì, show sản phẩm chạy trực tiếp, đưa số đang có và nói rõ chỗ đang tắc. Sản phẩm hỏng live vẫn tốt hơn một bản quay mượt mà không phản ánh thực tế.</p><p>Sau phần demo, cả nhóm chỉ ra nút thắt tiếp theo và chốt kết nối: ai bán hộ ai, ai build chung với ai, ai đang cần đúng thứ người khác đã làm ra.</p><div class="demo-rules"><span><svg><use href="#i-check"/></svg>Không slide</span><span><svg><use href="#i-check"/></svg>Không video quay sẵn</span><span><svg><use href="#i-check"/></svg>Không bịa số</span><span><svg><use href="#i-check"/></svg>Không xếp hạng</span></div></article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="wrap grid-2">
+        <article class="card track" data-reveal><div class="track-label">Lựa chọn mặc định</div><h3>Làm một mình</h3><p>Sản phẩm của bạn, vấn đề của bạn, tự quyết mọi thứ và chạm đủ các khâu từ lõi tới thanh toán.</p></article>
+        <article class="card track" data-reveal><div class="track-label">Nhóm tối đa 3 người</div><h3>Ghép nhóm để đi xa hơn</h3><p>Một người đứng tên giữ repo và tài khoản nhận tiền. Mỗi người vẫn tự làm tool nội bộ của mình. Chốt trước cuối tuần 1.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <article class="card community-card" data-reveal>
+          <div class="section-head left" style="margin-bottom:0"><span class="eyebrow">Cộng đồng</span><h2>Một nhóm không giải tán sau ngày cuối</h2><p class="lead">Bốn tuần là hai mươi tám nhịp, không phải bốn. Cohort sau tiếp tục vào chung để mạng lưới tích lũy thay vì bắt đầu lại từ số 0.</p></div>
+          <div class="community-points"><div class="community-point"><span class="icon"><svg><use href="#i-clock"/></svg></span><strong>Hai nhịp mỗi ngày</strong><p>Sáng nói việc sẽ làm, tối báo việc đã làm.</p></div><div class="community-point"><span class="icon"><svg><use href="#i-users"/></svg></span><strong>Bảng kỹ năng chung</strong><p>Biết ai giỏi gì, đang thiếu gì và có thể hỗ trợ ai.</p></div><div class="community-point"><span class="icon"><svg><use href="#i-link"/></svg></span><strong>Affiliate chạy thật</strong><p>Người có traffic có thể bán hộ người đã có sản phẩm.</p></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="section-head" data-reveal><span class="eyebrow">Kèm theo vé</span><h2>Mọi thứ bạn cần để bắt đầu, không tính thêm</h2></div>
+        <div class="card included-list" data-reveal>
+          <div class="included-item"><span class="check">✓</span><div><strong>Bản ghi toàn bộ chương trình</strong><p>Giữ vĩnh viễn, xem lại nếu bỏ lỡ một buổi.</p></div></div>
+          <div class="included-item"><span class="check">✓</span><div><strong>$10 credit Kyma</strong><p>Dùng cho phần AI bên trong sản phẩm đầu tay.</p></div></div>
+          <div class="included-item"><span class="check">✓</span><div><strong>Repo khởi đầu</strong><p>Cấu trúc, cấu hình, khung đặc tả và kiến trúc.</p></div></div>
+          <div class="included-item"><span class="check">✓</span><div><strong>Tài liệu tiếng Việt</strong><p>Cho macOS, Windows, an toàn API key và thanh toán quốc tế.</p></div></div>
+          <div class="included-item"><span class="check">✓</span><div><strong>Bộ công cụ Sơn dùng hằng ngày</strong><p>Đưa theo đúng nhịp từng buổi, kèm lý do sử dụng.</p></div></div>
+          <div class="included-item"><span class="check">✓</span><div><strong>Nhóm Telegram dài hạn</strong><p>Không giải tán sau ngày cuối; cohort sau tiếp tục vào chung.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="phu-hop">
+      <div class="wrap">
+        <div class="section-head" data-reveal><span class="eyebrow">Tự kiểm tra trước khi đăng ký</span><h2>Build to Own có hợp với bạn không?</h2></div>
+        <div class="grid-2">
+          <article class="card audience-card" data-reveal><h3 class="blue">Phù hợp nếu</h3><ul class="audience-list"><li>Bạn trả lương cho dev nhưng chưa đánh giá được họ làm đúng hay sai.</li><li>Bạn có business và muốn tự động hóa những việc lặp lại.</li><li>Bạn đã build được một thứ nhỏ và muốn đi tiếp tới sản phẩm bán được.</li><li>Bạn đang trả tiền cho nhiều công cụ và muốn tự sở hữu một phần trong số đó.</li><li>Bạn muốn bán sản phẩm ra quốc tế nhưng đang tắc ở khâu nhận tiền.</li></ul></article>
+          <article class="card audience-card no" data-reveal><h3>Không phù hợp nếu</h3><ul class="audience-list"><li>Bạn chưa từng mở terminal và cũng không định mở.</li><li>Bạn chỉ muốn xem cho biết mà không định build.</li><li>Bạn tìm một khóa học quay sẵn, có bài tập chấm điểm và chứng chỉ.</li><li>Bạn không muốn sản phẩm bị lỗi vài lần trong lúc làm.</li><li>Bạn cần một lớp đi chậm để dạy lại toàn bộ phần cơ bản.</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="thong-tin">
+      <div class="wrap info-shell">
+        <article class="card prep-panel" data-reveal><span class="eyebrow">Trước ngày bắt đầu</span><h2>Mang vấn đề thật của bạn vào sprint</h2><p class="lead">Sau khi được duyệt, bạn nhận trang chuẩn bị riêng với công cụ cần cài, hướng dẫn cho macOS và Windows, cùng ba bài tập.</p><div class="prep-steps"><div class="prep-step"><div>Vẽ lại quy trình một ngày làm việc: công cụ, thời gian, phần làm tay và phần lặp lại.</div></div><div class="prep-step"><div>Liệt kê mọi subscription đang trả và tổng chi phí mỗi tháng.</div></div><div class="prep-step"><div>Khoanh mười điểm đau nhất rồi chọn ba điểm đau nhất.</div></div></div><div class="cost-note">Ngoài vé $249, bạn cần một gói AI từ khoảng $20/tháng và khoảng $12 cho tên miền. Hosting, database, email và analytics có thể dùng mức miễn phí trong chương trình.</div></article>
+        <article class="card schedule-card" data-reveal><div class="schedule-head"><h3>Lịch và hình thức</h3><p>Một lịch cố định cho toàn bộ bốn tuần</p></div><div class="schedule-body"><div class="schedule-row"><span>Bắt đầu</span><strong>Chủ nhật, 23/08/2026</strong></div><div class="schedule-row"><span>Hình thức</span><strong>Online qua Zoom</strong></div><div class="schedule-row"><span>Lịch chính</span><strong>Thứ Năm và Chủ nhật</strong></div><div class="schedule-row"><span>Giờ học</span><strong>20:00–22:00 giờ Việt Nam</strong></div><div class="schedule-row"><span>Phòng mở</span><strong>19:45</strong></div><div class="schedule-row"><span>Demo Day</span><strong>17/09/2026</strong></div><div class="schedule-row"><span>Cộng đồng</span><strong>Telegram, không giải tán</strong></div></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="hoc-phi">
+      <div class="wrap">
+        <article class="card pricing-card" data-reveal>
+          <div class="pricing-layout"><div class="price-panel"><a class="approved-card-link" href="https://luma.com/6bc3oab0" target="_blank" rel="noopener" aria-label="Đăng ký Build to Own trên Luma"><img class="approved-card-img" src="assets/pricing-approved.png" width="795" height="778" alt="Build to Own — Builder 249 đô la, Team 899 đô la, Founder 8.990 đô la"><span class="pricing-tier-overlay"><span>Builder $249</span><span>Team $899</span><span>Founder $8,990</span></span><span class="pricing-program-overlay">Build to Own</span></a></div><div class="pricing-content"><h3>Mọi thứ để build và ship trong 4 tuần</h3><div class="pricing-divider"></div><div class="price-features"><div class="price-feature"><span class="check">✓</span>4 tuần build trực tiếp cùng Sơn</div><div class="price-feature"><span class="check">✓</span>8 buổi và 1 Demo Day</div><div class="price-feature"><span class="check">✓</span>Bản ghi giữ vĩnh viễn</div><div class="price-feature"><span class="check">✓</span>$10 credit Kyma</div><div class="price-feature"><span class="check">✓</span>Repo khởi đầu và tài liệu tiếng Việt</div><div class="price-feature"><span class="check">✓</span>Nhóm Telegram dài hạn</div></div><div class="price-cta"><a class="btn btn-primary btn-icon" href="https://luma.com/6bc3oab0" target="_blank" rel="noopener">Đăng ký trên Luma <svg><use href="#i-arrow"/></svg></a></div><div class="price-note tier-summary"><span><strong>Builder</strong> $249</span><span><strong>Team</strong> $899</span><span><strong>Founder</strong> $8,990</span></div></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="narrow">
+        <div class="section-head" data-reveal><span class="eyebrow">FAQ</span><h2>Câu hỏi thường gặp</h2><p class="lead">Những điều cần biết trước khi gửi đơn đăng ký.</p></div>
+        <div class="faq" data-reveal>
+          <details open><summary>Không biết lập trình có tham gia được không?</summary><p>Bạn không cần học lập trình bốn năm, nhưng cần sẵn sàng mở terminal, gõ lệnh, gặp lỗi và sửa. Đây không phải lớp “dùng AI mà không cần chạm kỹ thuật”.</p></details>
+          <details><summary>Bỏ lỡ một buổi thì sao?</summary><p>Toàn bộ chương trình được ghi lại và bạn giữ bản ghi vĩnh viễn. Bạn có thể xem lại buổi đã lỡ.</p></details>
+          <details><summary>Có bắt buộc phải làm một mình không?</summary><p>Không. Bạn có thể làm một mình hoặc ghép nhóm hai đến ba người, nhưng phải chốt trước cuối tuần 1 và mỗi người vẫn tự làm tool nội bộ của mình.</p></details>
+          <details><summary>Ngoài vé $249 còn chi phí nào?</summary><p>Bạn cần một gói AI từ khoảng $20/tháng và khoảng $12 cho tên miền. Hosting, database, email và analytics có thể dùng mức miễn phí trong chương trình.</p></details>
+          <details><summary>Đăng ký xong có được vào ngay không?</summary><p>Sơn đọc và duyệt từng đơn. Sau khi được duyệt, bạn nhận trang chuẩn bị, hướng dẫn cài đặt và ba bài tập trước chương trình.</p></details>
+          <details><summary>Các buổi quay lại có sử dụng hình ảnh người tham gia không?</summary><p>Nếu không muốn xuất hiện, bạn có thể tắt camera và đổi tên hiển thị. Phần hỏi đáp, gỡ rối riêng không nằm trong bản phát hành. Với Demo Day, Sơn sẽ hỏi lại trước khi sử dụng.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="final-card" data-reveal><div><h2>Bốn tuần nữa, bạn có một sản phẩm đang chạy mang tên mình.</h2><p>Không phải slide. Không phải video quay sẵn. Nếu bạn sẵn sàng build thật, ship thật và để sản phẩm gặp người dùng thật, hãy gửi đơn trên Luma.</p></div><div class="final-action"><div class="final-date">Bắt đầu · Chủ nhật, 23/08/2026</div><a class="btn btn-icon" href="https://luma.com/6bc3oab0" target="_blank" rel="noopener">Đăng ký Build to Own — $249 <svg><use href="#i-arrow"/></svg></a><div class="final-note">Đăng ký cần được Sơn duyệt</div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid"><div><div class="footer-brand">Affitor</div><p class="footer-copy">Build to Own — Từ một vấn đề thật của bạn đến một sản phẩm có người trả tiền.</p></div><div class="footer-meta">© 2026 Affitor<br>Khi đăng ký, bạn đồng ý nhận email về chương trình và có thể hủy bằng một lần bấm.</div></div>
+  </footer>
+
+  <div class="sticky-mobile"><a class="btn btn-primary" href="https://luma.com/6bc3oab0" target="_blank" rel="noopener">Đăng ký trên Luma — $249</a></div>
+
+  <script>
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "source": "user-screenshots-affitor",
+  "style_family": "Clean Minimal",
+  "colors": {
+    "primary": "#233FD8",
+    "primary_hover": "#1B31B4",
+    "primary_soft": "#EAEEFA",
+    "background": "#FFFFFF",
+    "background_soft": "#F6F8FB",
+    "ivory": "#FFFFFF",
+    "ivory_deep": "#FFFFFF",
+    "lemon_accent": "#F9F564",
+    "surface": "#FFFFFF",
+    "text": "#0B2545",
+    "muted": "#465D73",
+    "subtle": "#7D90A5",
+    "border": "#DFE4EA",
+    "success": "#19B968"
+  },
+  "font": {
+    "head": "Inter",
+    "body": "Inter",
+    "head_weight": 800,
+    "body_weight": 400,
+    "note": "Ảnh mẫu thể hiện một họ sans duy nhất; phân cấp bằng weight. Inter hỗ trợ đầy đủ tiếng Việt."
+  },
+  "spacing": {
+    "scale": [4, 8, 12, 16, 24, 32, 48, 64, 96],
+    "section_y_desktop": 96,
+    "section_y_mobile": 72,
+    "container": 1240
+  },
+  "radius": {
+    "small": 10,
+    "medium": 16,
+    "large": 20,
+    "pill": 999
+  },
+  "typography": {
+    "h1_desktop_max": 68,
+    "h1_mobile": 42,
+    "h2_desktop_max": 38,
+    "h2_mobile": 28,
+    "rule": "Hero giới hạn đúng hai dòng trên desktop; tiêu đề các section sau giữ cỡ vừa, dễ đọc."
+  },
+  "shadow": {
+    "small": "0 8px 24px rgba(11,37,69,.06)",
+    "medium": "0 18px 48px rgba(11,37,69,.09)"
+  },
+  "artwork_panel_palette": {
+    "background": "#FFFFFF",
+    "cobalt": "#233FD8",
+    "acid_yellow": "#F9F564",
+    "usage": "Demo Day date panel and pricing panel, inspired by the official AI event artwork"
+  },
+  "toggles": {
+    "countdown": false,
+    "chatbot": false,
+    "contact_buttons": false,
+    "sticky_mobile_cta": true
+  },
+  "assets": {
+    "hero": "assets/luma-builder-event.png",
+    "hero_source": "official_luma_event_art",
+    "demo_day_card": "assets/demo-day-approved.png",
+    "pricing_card": "assets/pricing-approved.png",
+    "card_source": "exact crops from the user-approved concept image",
+    "trainer": "assets/son-techcrunch.jpeg",
+    "logo": "Affitor",
+    "favicon": "A"
+  }
+}

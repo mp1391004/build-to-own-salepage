@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "slug": "build-to-own",
+  "name": "Build to Own — 4 tuần thành builder",
+  "brand": {
+    "trainer": "Sơn",
+    "program_name": "Build to Own",
+    "tagline": "Từ một vấn đề thật của bạn đến một sản phẩm có người trả tiền."
+  },
+  "anchor": {
+    "segment": "Chủ doanh nghiệp và người làm sản phẩm đang phụ thuộc vào dev hoặc nhiều công cụ thuê bao, muốn tự dựng bản đầu tiên, hiểu kỹ thuật đủ sâu để ra quyết định và đưa một sản phẩm lên internet.",
+    "dream_outcome": {
+      "headline": "Trong 4 tuần, đưa một sản phẩm mang tên bạn lên internet, có trang giá, nhận được tiền và có người dùng thật.",
+      "timeframe": "4 tuần",
+      "metric": "Ít nhất 4 tool nội bộ đang chạy và 1 sản phẩm có thể nhận thanh toán"
+    },
+    "pains": [
+      {
+        "rank": 1,
+        "text": "Thuê dev nhưng không mô tả được điều mình muốn, không đánh giá được quyết định kỹ thuật và không biết báo giá có hợp lý hay không.",
+        "category": "functional"
+      },
+      {
+        "rank": 2,
+        "text": "Trả tiền hàng tháng cho nhiều công cụ nhưng không sở hữu tài sản nào và vẫn phụ thuộc vào sản phẩm của người khác.",
+        "category": "financial"
+      },
+      {
+        "rank": 3,
+        "text": "Có ý tưởng hoặc đã build được thứ gì đó nhưng chưa đi hết đường từ lõi sản phẩm tới deploy, thanh toán và phân phối.",
+        "category": "functional"
+      }
+    ],
+    "gains": [
+      {
+        "rank": 1,
+        "text": "Tự làm được bản đầu tiên trước khi thuê ai và nói được cùng ngôn ngữ với dev.",
+        "category": "required"
+      },
+      {
+        "rank": 2,
+        "text": "Sở hữu ít nhất bốn tool nội bộ giải quyết công việc thật và giảm một phần chi phí thuê bao.",
+        "category": "expected"
+      },
+      {
+        "rank": 3,
+        "text": "Ra mắt một sản phẩm có domain, bảng giá, thanh toán, affiliate và người dùng thật.",
+        "category": "desired"
+      }
+    ]
+  },
+  "core_offer": {
+    "name": "Build to Own",
+    "format": "cohort_live_build_along",
+    "scope": "4 tuần, 8 buổi và 1 Demo Day, học trực tuyến qua Zoom",
+    "start_date": "2026-08-23",
+    "demo_day": "2026-09-17",
+    "schedule": "Thứ Năm và Chủ nhật, 20:00–22:00 giờ Việt Nam; phòng mở từ 19:45",
+    "outcomes": [
+      "Nói được cùng ngôn ngữ với dev và đánh giá tốt hơn thời gian, chi phí, độ khó của một tính năng.",
+      "Tự làm bản đầu tiên trước khi thuê người khác.",
+      "Có ít nhất bốn tool nội bộ dùng được trong công việc.",
+      "Có một sản phẩm sống trên internet, có trang giá và nhận được tiền.",
+      "Biết cách tự học tiếp sau khi sprint kết thúc."
+    ]
+  },
+  "included": [
+    {
+      "name": "Bản ghi toàn bộ chương trình",
+      "description": "Giữ vĩnh viễn; có thể xem lại nếu bỏ lỡ một buổi."
+    },
+    {
+      "name": "$10 credit Kyma",
+      "description": "Dùng cho phần AI chạy bên trong sản phẩm đầu tay."
+    },
+    {
+      "name": "Repo khởi đầu",
+      "description": "Có sẵn cấu trúc thư mục, cấu hình, khung đặc tả và kiến trúc để bắt đầu nhanh."
+    },
+    {
+      "name": "Bộ tài liệu tiếng Việt",
+      "description": "Hướng dẫn cài môi trường, bảo vệ API key, mẫu bảng làm việc và hướng dẫn chọn cổng thanh toán quốc tế cho người Việt."
+    },
+    {
+      "name": "Bộ công cụ Sơn đang dùng",
+      "description": "Được đưa theo đúng nhịp từng buổi, kèm cách Sơn sử dụng và lý do lựa chọn."
+    },
+    {
+      "name": "Nhóm Telegram dài hạn",
+      "description": "Nhóm không giải tán sau ngày cuối; các cohort sau tiếp tục tham gia chung."
+    }
+  ],
+  "pricing": {
+    "currency": "USD",
+    "price": 249,
+    "price_display": "Builder $249 · Team $899 · Founder $8,990",
+    "early_bird_closed": true,
+    "single_tier": false,
+    "tiers": [
+      {"name": "Builder", "price": 249, "approval_required": false},
+      {"name": "Team", "price": 899, "seats": 4, "approval_required": false},
+      {"name": "Founder", "price": 8990, "approval_required": true}
+    ]
+  },
+  "registration": {
+    "method": "external_luma",
+    "approval_required": true,
+    "cta_url": "https://luma.com/6bc3oab0",
+    "primary_cta": "Đăng ký trên Luma",
+    "note": "Sơn đọc và duyệt từng đơn đăng ký."
+  },
+  "guarantee": null,
+  "testimonials": [],
+  "vsl": null,
+  "urgency": {
+    "type": "cohort_start",
+    "deadline": "2026-08-23",
+    "reason": "Chương trình bắt đầu theo lịch cố định vào Chủ nhật, 23/08/2026."
+  },
+  "not_for": [
+    "Người chưa từng mở terminal và cũng không có ý định thử.",
+    "Người chỉ muốn xem cho biết mà không định build.",
+    "Người tìm một khóa học quay sẵn, có bài tập chấm điểm và chứng chỉ."
+  ]
+}
