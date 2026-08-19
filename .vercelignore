@@ -1,0 +1,10 @@
+dist
+.git
+.env.local
+README.md
+offer.json
+content.json
+design-tokens.json
+buoc2.json
+noidung-salepage.md
+xem-trang.command

@@ -10,3 +10,5 @@ public/uploads/
 *.db
 temp/
 __pycache__/
+.vercel
+.env*.local
